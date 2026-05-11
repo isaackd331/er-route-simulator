@@ -1,5 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
+
+import Providers from "@/queries/providers";
 
 export const metadata: Metadata = {
   title: "Eternal Return Route Simulator",
@@ -15,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`h-full antialiased`}>
       <body className="min-h-full relative">
-        <div>{children}</div>
-        <div id="modalPortal" />
+        <Providers>
+          <div>{children}</div>
+          <div id="modalPortal" />
+        </Providers>
       </body>
     </html>
   );
