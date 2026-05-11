@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 
-import Providers from "@/queries/providers";
+import Providers from "@/queries/Providers";
 
 export const metadata: Metadata = {
   title: "Eternal Return Route Simulator",
