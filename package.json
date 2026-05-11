@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "serve": "env-cmd -f .env.local next dev",
+    "serve-staging": "env-cmd -f .env.staging next dev",
+    "serve-production": "env-cmd -f .env.production next dev",
+    "build-staging": "env-cmd -f .env.staging next build",
+    "build-production": "env-cmd -f .env.production next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -14,13 +17,14 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@tailwindcss/postcss": "4",
+    "@types/node": "20",
+    "@types/react": "19",
+    "@types/react-dom": "19",
+    "env-cmd": "11.0.0",
+    "eslint": "9",
     "eslint-config-next": "16.2.6",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "tailwindcss": "4",
+    "typescript": "5"
   }
 }
