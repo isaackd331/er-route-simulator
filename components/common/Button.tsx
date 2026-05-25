@@ -1,3 +1,5 @@
+"use client";
+
 import classNames from "classnames";
 
 import { IButton, ESize, EVariant } from "@/interfaces/button/interface";
@@ -14,7 +16,7 @@ const Button = ({ label, size, variant, ...props }: IButton) => {
       className={classNames(
         ESize[size],
         !props.disabled && EVariant[variant],
-        "px-6 py-2.5 rounded-md font-medium tracking-wide transition-all duration-200",
+        "px-6 py-2.5 rounded-md text-[1.6rem] font-medium tracking-wide transition-all duration-200",
         "disabled:border-slate-700 disabled:bg-slate-800 disabled:text-slate-500 disabled:cursor-not-allowed disabled:opacity-60"
       )}
     >
