@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 
-import Providers from "@/queries/Providers";
+import Providers from "@/components/common/Providers";
 
 export const metadata: Metadata = {
   title: "Eternal Return Route Simulator",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`h-full antialiased`}>
+    <html lang="ko" className={`h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full relative">
         <Providers>
           <div>{children}</div>
