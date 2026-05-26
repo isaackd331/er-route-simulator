@@ -11,6 +11,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import { CookiesProvider } from "react-cookie";
+import { ThemeProvider } from "next-themes";
 
 const makeQueryClient = () => {
   return new QueryClient({
@@ -39,7 +40,11 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <CookiesProvider>
-      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <QueryClientProvider client={queryClient}>
+          {children}
+        </QueryClientProvider>
+      </ThemeProvider>
     </CookiesProvider>
   );
 };
