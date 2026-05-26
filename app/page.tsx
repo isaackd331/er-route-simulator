@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "@/components/common/Button";
+import ToggleDarkBtn from "@/components/headers/ToggleDarkBtn";
 
 const Index = () => {
   return (
@@ -33,7 +34,11 @@ const Index = () => {
             console.log("반응이 되면 곤란");
           }}
         />
+
+        <ToggleDarkBtn />
       </div>
+
+      <div>테스트</div>
     </div>
   );
 };
