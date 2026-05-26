@@ -29,7 +29,7 @@ const getQueryClient = () => {
   }
 };
 
-const Providers = ({ children }: { children: React.ReactNode }) => {
+const QueryProvier = ({ children }: { children: React.ReactNode }) => {
   const queryClient = getQueryClient();
 
   return (
@@ -37,4 +37,4 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default Providers;
+export default QueryProvier;
