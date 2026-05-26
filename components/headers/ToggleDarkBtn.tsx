@@ -15,11 +15,8 @@ const ToggleDarkBtn = () => {
       }
     >
       <div className="relative w-8 h-8">
-        {resolvedTheme === "dark" ? (
-          <SunIcon fill="true" />
-        ) : (
-          <MoonIcon fill="true" />
-        )}
+        <SunIcon className="hidden dark:block" fill="true" />
+        <MoonIcon className="blcok dark:hidden" fill="true" />
       </div>
     </button>
   );
