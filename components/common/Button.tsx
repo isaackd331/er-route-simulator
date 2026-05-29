@@ -6,7 +6,8 @@ import { IButton, ESize, EVariant } from "@/interfaces/button/interface";
 
 /**
  * 커스텀 공통 버튼 컴포넌트
- * IButton 참조
+ *
+ * - IButton 참조
  */
 const Button = ({ label, size, variant, ...props }: IButton) => {
   return (
