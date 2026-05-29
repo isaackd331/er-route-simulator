@@ -12,7 +12,7 @@ import {
  * - @required label[string] : Input 요소 주변에 위치하여 해당 Input에 입력받을 요소 지시
  * - @required register[UseFormRegisterReturn] : RHF useForm Hook을 통해 입력받는 Form 요소 관리
  * - error[FieldError] : RHF Validation 등을 활용했을 떄의 에러 검출
- * - labelPosition["side" | "upper"] : label 위치 결정
+ * - labelPosition["side" | "upper"] : label 위치 결정, 기본 side
  */
 export interface IFormDataInput
   extends React.InputHTMLAttributes<HTMLInputElement> {
