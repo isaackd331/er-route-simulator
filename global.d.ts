@@ -1,5 +1,3 @@
-import { FieldValues, RegisterOptions } from "react-hook-form";
-
 export {};
 
 declare global {
@@ -27,14 +25,6 @@ declare global {
     | "unshift";
 
   /**
-   * RHF Validation 전용 타입
-   */
-  type TRules = Omit<
-    RegisterOptions<FieldValues, string>,
-    "valuseAsNumber" | "valueAsDate" | "setValueAs" | "disabled"
-  >;
-
-  /**
    * 최소 그 length 이상이 있어야 허용하는 배열 타입
    * ex) LeastLengthArray<string, 3> = 최소 3의 길이를 가지고 string만 들어올 수 있는 배열 타입 선언
    */
@@ -58,12 +48,4 @@ declare global {
     [I: number]: T;
     [Symbol.iterator]: () => IterableIterator<T>;
   };
-
-  /**
-   * RHF 전용 인터페이스
-   */
-  interface IUseForm {
-    name: string;
-    rules?: TRules;
-  }
 }
