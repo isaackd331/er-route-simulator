@@ -81,39 +81,3 @@ export interface IFormDataCheckbox
   register: UseFormRegisterReturn;
   error?: FieldError;
 }
-
-/**
- * 공통 Submit용 FormData 문항 인터페이스
- *
- * - @required type["input" | "select" | "radio" | "checkbox"]: 문항의 타입
- * - @required name[Path<T>]: RHF useForm 인터페이스의 Key값만 받도록 강제
- * - @required label[string]: 해당 문항의 입력 지시값
- * - labelPosition['upper' | 'side']: input 타입 문항의 label 위치값 결정
- * - inputType[React.HTMLInputTypeAttribute]: input 타입 문항의 input type값
- * - placeholder[string]: input 타입 문항의 플레이스홀더
- * - options[IOption[]]: select와 radio 타입 문항의 옵션 배열
- * - rules[RegisterOptions<T, Path<T>>]: select 타입 문항에서 규칙을 전달받음
- */
-interface IFormDataField<T extends FieldValues> {
-  type: "input" | "select" | "radio" | "checkbox";
-  name: Path<T>;
-  label: string;
-  labelPosition?: "upper" | "side";
-  inputType?: React.HTMLInputTypeAttribute;
-  placeholder?: string;
-  options?: IOption[];
-  rules?: RegisterOptions<T, Path<T>>;
-}
-
-/**
- * 공통 FormData 인터페이스
- *
- * - @required fields[IFormDataField<T>[]]: 문항 생성을 위한 배열
- * - @required register[UseFormRegister<T>]: RHF Register
- * - @required errors[FieldErrors<T>]: RHF Errors
- */
-export interface IFormData<T extends FieldValues> {
-  fields: IFormDataField<T>;
-  register: UseFormRegister<T>;
-  errors: FieldErrors<T>;
-}
