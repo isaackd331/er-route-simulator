@@ -34,7 +34,7 @@ const Modal = ({ isOpen, onClose, children, title }: IModal) => {
       />
 
       <div
-        className="w-full max-w-md overflow-hidden rounded-2xl bg-white p-4 text-left align-middle shadow-xl"
+        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-1001 w-full max-w-md overflow-hidden rounded-2xl bg-white p-4 text-left align-middle shadow-xl"
         onClick={(evt) => {
           evt.stopPropagation();
         }}
