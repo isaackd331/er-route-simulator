@@ -42,7 +42,7 @@ const Modal = ({ isOpen, onClose, children, title }: IModal) => {
         {/* Title */}
         <section className="flex justify-between items-center p-3 border-b border-gray-200">
           <h3 className="text-lg font-medium text-gray-900">{title}</h3>
-          <button onClick={onClose} className="text-gray-900">
+          <button onClick={onClose} className="text-gray-900 dark:text-white">
             ✕
           </button>
         </section>
