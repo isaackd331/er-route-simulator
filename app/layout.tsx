@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 import Providers from "@/components/common/Providers";
+import GlobalModalContainer from "@/components/common/modals/GlobalModalContainer";
 
 export const metadata: Metadata = {
   title: "Eternal Return Route Simulator",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className="min-h-full relative">
         <Providers>
           <div>{children}</div>
+          <GlobalModalContainer />
           <div id="modalPortal" />
         </Providers>
       </body>
