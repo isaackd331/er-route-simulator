@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 
+import Header from "@/components/header/Header";
 import Providers from "@/components/common/Providers";
 import GlobalModalContainer from "@/components/common/modals/GlobalModalContainer";
 
@@ -19,7 +20,10 @@ export default function RootLayout({
     <html lang="ko" className={`h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full relative">
         <Providers>
-          <div>{children}</div>
+          <Header />
+
+          <main>{children}</main>
+
           <GlobalModalContainer />
           <div id="modalPortal" />
         </Providers>

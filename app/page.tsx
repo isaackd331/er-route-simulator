@@ -1,7 +1,7 @@
 "use client";
 
 import Button from "@/components/common/Button";
-import ToggleDarkBtn from "@/components/headers/ToggleDarkBtn";
+import ToggleDarkBtn from "@/components/header/ToggleDarkBtn";
 
 import { useModalStore } from "@/zustand/useModalStore";
 
@@ -43,7 +43,6 @@ const Index = () => {
               console.log("반응이 되면 곤란");
             }}
           />
-          <ToggleDarkBtn />
         </div>
       </div>
     </>
