@@ -11,12 +11,16 @@ type TRole = "weapon" | "chest" | "head" | "arm" | "leg" | "consume";
 
 /**
  * 아이템 희귀도
+ * - rare: 희귀
  * - epic: 영웅
  * - legendary: 전설
  * - mythic: 신화
- * - 영웅 미만 등급은 따로 기재하지 않음
  */
-type TRarity = "epic" | "legendary" | "mythic";
+type TRarity = "rare" | "epic" | "legendary" | "mythic";
+
+/**
+ * 에키온/프리야 전용 아이템 희귀도
+ */
 
 /**
  * 아이템 재료
@@ -270,7 +274,13 @@ interface IStat {
 }
 
 /**
+ * public/items/TRole/###.png 형태의 string만 들어오도록 강제
+ */
+type TImgPath = `/items/${TRole}/${string}.png`;
+
+/**
  * 아이템 인터페이스
+ * - @required imgPath[TImgPath]: 아이템 아이콘 경로
  * - @required enName[string]: 아이템 영문명
  * - @required krName[string]: 아이템 한글명
  * - @required role[TRole]: 아이템 역할군
@@ -279,6 +289,7 @@ interface IStat {
  * - @required stat[IStat]: 아이템 스탯
  */
 export interface IItem {
+  imgPath: TImgPath;
   enName: string;
   krName: string;
   role: TRole;
