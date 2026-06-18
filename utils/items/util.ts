@@ -1,4 +1,4 @@
-import { TUniqueName } from "@/interfaces/items/interface";
+import { TUniqueName, IUnique } from "@/interfaces/items/interface";
 
 /**
  * 고유 효과 영문명-한글명 맵핑
@@ -84,4 +84,17 @@ export const uniqueNameEnKrMapper: Record<TUniqueName, string> = {
   spiritHarvest: "영혼 수확",
   vfControlEnhancement: "VF제어 강화",
   necrosis: "독사의 맹독",
+};
+
+/**
+ * 아이템의 JSON 데이터에 있는 values를 각 index에 맞게 설명에 붙이는 유틸 함수
+ */
+export const renderDesc = (uniqueEffect: IUnique) => {
+  let result = uniqueEffect.desc;
+
+  uniqueEffect.values.forEach((value, idx) => {
+    result = result.replace(`{${idx}}`, value.toString());
+  });
+
+  return result;
 };
