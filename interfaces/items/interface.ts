@@ -202,8 +202,14 @@ export type TUniqueName =
 /**
  * 아이템 고유효과 인터페이스
  * - @required name[TUniqueName]: 고유효과 영문명
+ * - @required desc[string]: 고유효과 설명
  * - @required values[number[]]: 고유효과 효과 수치
  */
+interface IUnique {
+  name: TUniqueName;
+  desc: string;
+  values: number[];
+}
 
 /**
  * 아이템 스텟 인터페이스
@@ -232,7 +238,7 @@ export type TUniqueName =
  * - lifeSteal[number]: 생명력흡수
  * - omnisyphon[number]: 모든피해흡혈
  * - slowResistance[number]: 둔화효과저항
- * - unique[]: 고유능력
+ * - unique[IUnique[]]: 고유능력
  */
 interface IStat {
   atkPower?: number;
@@ -260,7 +266,7 @@ interface IStat {
   lifeSteal?: number;
   omnisyphon?: number;
   slowResistance?: number;
-  // unique?:
+  unique?: IUnique[];
 }
 
 /**
