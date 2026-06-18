@@ -85,14 +85,3 @@ export const uniqueNameEnKrMapper: Record<TUniqueName, string> = {
   vfControlEnhancement: "VF제어 강화",
   necrosis: "독사의 맹독",
 };
-
-/**
- * 각 고유효과별 수치 맵핑을 위한 설명 원본
- */
-export const uniqueEffectDesc: Record<TUniqueName, string> = {
-  skillAmplification: "스킬 증폭 +{0}%",
-  blazeUp:
-    "적 실험체에게 기본 공격을 적중할 때마다 5초 동안 공격 속도가 {0}% 증가하는 중첩을 얻습니다.",
-  blazeUpAmplified:
-    "적 실험체에게 개별 스킬로 피해를 입힐 경우, 5초간 예열을 중첩하며 중첩 당 스킬의 피해량이 {0}% 증가합니다.\n최대 6중첩이 되면 모든 피해 흡혈 {1}%를 추가로 얻습니다.\n지속적으로 피해를 입히는 개별 스킬의 경우 1초 마다 판정이 적용됩니다.",
-};
