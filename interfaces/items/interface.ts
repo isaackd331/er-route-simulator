@@ -10,6 +10,55 @@
 type TRole = "weapon" | "chest" | "head" | "arm" | "leg" | "consume";
 
 /**
+ * 무기 카테고리
+ * - arcana: 아르카나
+ * - assaultRifle: 돌격소총
+ * - axe: 도끼
+ * - bat: 방망이
+ * - bow: 활
+ * - camera: 카메라
+ * - crossbow: 석궁 (오타 수정)
+ * - dagger: 단검
+ * - dualSwords: 쌍검
+ * - glove: 글러브
+ * - guitar: 기타
+ * - hammer: 망치
+ * - nunchaku: 쌍절곤
+ * - pistol: 권총
+ * - rapier: 레이피어
+ * - shuriken: 암기
+ * - sniperRifle: 저격총 (오타 수정)
+ * - spear: 창
+ * - tonfa: 톤파
+ * - twoHandedSword: 양손검
+ * - vfProsthetic: VF의수
+ * - whip: 채찍
+ */
+type TCategory =
+  | "arcana"
+  | "assaultRifle"
+  | "axe"
+  | "bat"
+  | "bow"
+  | "camera"
+  | "crossbow"
+  | "dagger"
+  | "dualSwords"
+  | "glove"
+  | "guitar"
+  | "hammer"
+  | "nunchaku"
+  | "pistol"
+  | "rapier"
+  | "shuriken"
+  | "sniperRifle"
+  | "spear"
+  | "tonfa"
+  | "twoHandedSword"
+  | "vfProsthetic"
+  | "whip";
+
+/**
  * 아이템 희귀도
  * - rare: 희귀
  * - epic: 영웅
@@ -274,9 +323,11 @@ interface IStat {
 }
 
 /**
- * public/items/TRole/###.png 형태의 string만 들어오도록 강제
+ * public/items/TRole/###.png or public/items/weapon/TCategory/###.png 형태의 string만 들어오도록 강제
  */
-type TImgPath = `/items/${TRole}/${string}.png`;
+type TImgPath =
+  | `/items/${TRole}/${string}.png`
+  | `/items/weapon/${TCategory}/${string}.png`;
 
 /**
  * 아이템 인터페이스
