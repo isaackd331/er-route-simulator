@@ -88,169 +88,164 @@ type TMaterial =
 
 /**
  * 아이템 고유효과 이름
- * - skillAmplification: 스킬 증폭
+ * - awakening: 각성
+ * - bioticInfusion: 의념
+ * - blazeOfGlory: 광휘
  * - blazeUp: 예열
  * - blazeUpAmplified: 예열-증강
+ * - blazeUpEndurance: 예열-인내
  * - blazeUpEnhanced: 예열-강화
  * - blazeUpOutburst: 예열-격앙
- * - blazeUpEndurance: 예열-인내
- * - debilitaion: 부패
- * - deferral: 유예
- * - bloticInfusion: 의념
- * - healingReduction: 치유 감소
- * - extendedFury: 연장 총열
- * - master: 달인
- * - blazeOfGlory: 광휘
- * - tenacity: 방해 효과 저항
- * - pulverization: 분쇄
- * - combatInstinct: 개시
- * - debilitatingFog: 쇠약의 안개
- * - taserGun: 테이저 건
- * - taserGunSurge: 테이저 건-도약
- * - burdenMagneticMidnight: 충전-섬광
+ * - bruteEnforce: 집행자
  * - burdenLeadShell: 충전-철환
- * - lichsGrasp: 한파
- * - verdict: 선고
- * - vigor: 열정
- * - vigorCirculation: 열정-순환
- * - vigorRush: 열정-환희
- * - flameBarrier: 불꽃 결계
- * - vanguard: 선봉장
- * - electricShock: 전자기 충격
- * - tailwind: 순풍
+ * - burdenMagneticMidnight: 충전-섬광
+ * - cataclasm: 파열
+ * - combatInstinct: 개시
  * - convergence: 응집
- * - manaSeed: 마력 씨앗
- * - turbulence: 격동
+ * - criticalBlow: 크리티컬 블로우
+ * - crushingBlow: 파쇄타
+ * - debilitatingFog: 쇠약의 안개
+ * - debilitation: 부패
+ * - deferral: 유예
+ * - dimensionalRift: 차원 균열
+ * - echoingStrike: 블래스터 탄환
+ * - electricShock: 전자기 충격
+ * - empowerment: 격려
+ * - extendedFury: 연장 총열
+ * - fafnirsScales: 파프니르의 비늘
+ * - flameBarrier: 불꽃 결계
+ * - gap: 간격
+ * - guardPunch: 가드 펀치
+ * - gustOfWind: 돌풍
+ * - gustOfWindRally: 돌풍-결집
+ * - healingReduction: 치유 감소
+ * - heartOfBurst: 겁화의 심장
  * - heavyweight: 묵직함
- * - secondWindColossal: 세컨드 윈드-거인
+ * - inFullBloom: 만개
+ * - iteration: 반복 기동
+ * - lichsGrasp: 한파
+ * - magicBullet: 마탄
+ * - manaSeed: 마력 씨앗
+ * - master: 달인
+ * - necrosis: 독사의 맹독
+ * - photonLauncher: 포톤 런처
+ * - predation: 포식
+ * - prayerForTheDead: 죽음을 위한 기도
+ * - primordialHex: 저주
+ * - pulverization: 분쇄
+ * - punishment: 징벌
+ * - punishmentTracking: 징벌-추적
+ * - quickstep: 현란함
+ * - rebellion: 반항
+ * - resonance: 후속타
  * - secondWindBloodPact: 세컨드 윈드-핏빛 계약
+ * - secondWindColossal: 세컨드 윈드-거인
+ * - securityProtocol: 보호 프로토콜
+ * - skillAmplification: 스킬 증폭
+ * - smolder: 발화
+ * - spotOn: 명중
  * - streamlined: 신속
  * - streamlinedChargeCarrier: 신속-플라즈마
  * - streamlinedRudraEmbodied: 신속-루드라의 단검
  * - streamlinedZephyr: 신속-산들바람
- * - thunderRuling: 뇌명 집행
- * - photonLauncher: 포톤 런처
- * - vitalityStrike: 재생의 일격
- * - quickstep: 현란함
- * - spotOn: 명중
  * - swiftStrides: 가벼운 발걸음
- * - punishment: 징벌
- * - punishmentTracking: 징벌-추적
- * - rebellion: 반항
- * - dimensionalRift: 차원 균열
- * - awakening: 각성
- * - resonance: 후속타
- * - securityProtocol: 보호 프로토콜
- * - gustOfWind: 돌풍
- * - gustOfWindRally: 돌풍-결집
+ * - tailwind: 순풍
+ * - taserGun: 테이저 건
+ * - taserGunSurge: 테이저 건-도약
+ * - tenacity: 방해 효과 저항
+ * - thunderRuling: 뇌명 집행
  * - timeEdge: 타임 엣지
- * - primordialHex: 저주
- * - iteration: 반복 기동
- * - smolder: 발화
- * - reflection: 리플렉션
- * - criticalBlow: 크리티컬 블로우
- * - ultraFocus: 초집중
- * - heartOfBurst: 겁화의 심장
  * - tranquility: 명경지수
- * - crushingBlow: 파쇄타
- * - gap: 간격
- * - echoingStrike: 블래스터 탄환
+ * - turbulence: 격동
  * - twoSides: 두 개의 가면
- * - magicBullet: 마탄
- * - predation: 포식
- * - cataclasm: 파열
- * - inFullBloom: 만개
- * - empowerment: 격려
- * - targetingPod: 타겟팅 포드
- * - guardPunch: 가드 펀치
- * - fafnirsScales: 파프니르의 비늘
- * - prayerForTheDead: 죽음을 위한 기도
- * - spiritHarvest: 영혼 수확
+ * - ultraFocus: 초집중
+ * - vanguard: 선봉장
+ * - verdict: 선고
  * - vfControlEnhancement: VF제어 강화
- * - necrosis: 독사의 맹독
- * - bruteEnforce: 집행자
+ * - vigor: 열정
+ * - vigorCirculation: 열정-순환
+ * - vigorRush: 열정-환희
+ * - vitalityStrike: 재생의 일격
  */
 export type TUniqueName =
-  | "skillAmplification"
+  | "awakening"
+  | "bioticInfusion"
+  | "blazeOfGlory"
   | "blazeUp"
   | "blazeUpAmplified"
+  | "blazeUpEndurance"
   | "blazeUpEnhanced"
   | "blazeUpOutburst"
-  | "blazeUpEndurance"
-  | "debilitaion"
-  | "deferral"
-  | "bloticInfusion"
-  | "healingReduction"
-  | "extendedFury"
-  | "master"
-  | "blazeOfGlory"
-  | "tenacity"
-  | "pulverization"
-  | "combatInstinct"
-  | "debilitatingFog"
-  | "taserGun"
-  | "taserGunSurge"
-  | "burdenMagneticMidnight"
+  | "bruteEnforce"
   | "burdenLeadShell"
-  | "lichsGrasp"
-  | "verdict"
-  | "vigor"
-  | "vigorCirculation"
-  | "vigorRush"
-  | "flameBarrier"
-  | "vanguard"
-  | "electricShock"
-  | "tailwind"
+  | "burdenMagneticMidnight"
+  | "cataclasm"
+  | "combatInstinct"
   | "convergence"
-  | "manaSeed"
-  | "turbulence"
+  | "criticalBlow"
+  | "crushingBlow"
+  | "debilitatingFog"
+  | "debilitation"
+  | "deferral"
+  | "dimensionalRift"
+  | "echoingStrike"
+  | "electricShock"
+  | "empowerment"
+  | "extendedFury"
+  | "fafnirsScales"
+  | "flameBarrier"
+  | "gap"
+  | "guardPunch"
+  | "gustOfWind"
+  | "gustOfWindRally"
+  | "healingReduction"
+  | "heartOfBurst"
   | "heavyweight"
-  | "secondWindColossal"
+  | "inFullBloom"
+  | "iteration"
+  | "lichsGrasp"
+  | "magicBullet"
+  | "manaSeed"
+  | "master"
+  | "necrosis"
+  | "photonLauncher"
+  | "predation"
+  | "prayerForTheDead"
+  | "primordialHex"
+  | "pulverization"
+  | "punishment"
+  | "punishmentTracking"
+  | "quickstep"
+  | "rebellion"
+  | "resonance"
   | "secondWindBloodPact"
+  | "secondWindColossal"
+  | "securityProtocol"
+  | "skillAmplification"
+  | "smolder"
+  | "spotOn"
   | "streamlined"
   | "streamlinedChargeCarrier"
   | "streamlinedRudraEmbodied"
   | "streamlinedZephyr"
-  | "thunderRuling"
-  | "photonLauncher"
-  | "vitalityStrike"
-  | "quickstep"
-  | "spotOn"
   | "swiftStrides"
-  | "punishment"
-  | "punishmentTracking"
-  | "rebellion"
-  | "dimensionalRift"
-  | "awakening"
-  | "resonance"
-  | "securityProtocol"
-  | "gustOfWind"
-  | "gustOfWindRally"
+  | "tailwind"
+  | "taserGun"
+  | "taserGunSurge"
+  | "tenacity"
+  | "thunderRuling"
   | "timeEdge"
-  | "primordialHex"
-  | "iteration"
-  | "smolder"
-  | "reflection"
-  | "criticalBlow"
-  | "ultraFocus"
-  | "heartOfBurst"
   | "tranquility"
-  | "crushingBlow"
-  | "gap"
-  | "echoingStrike"
+  | "turbulence"
   | "twoSides"
-  | "magicBullet"
-  | "predation"
-  | "cataclasm"
-  | "inFullBloom"
-  | "empowerment"
-  | "targetingPod"
-  | "guardPunch"
-  | "fafnirsScales"
-  | "prayerForTheDead"
-  | "spiritHarvest"
+  | "ultraFocus"
+  | "vanguard"
+  | "verdict"
   | "vfControlEnhancement"
-  | "necrosis";
+  | "vigor"
+  | "vigorCirculation"
+  | "vigorRush"
+  | "vitalityStrike";
 
 /**
  * 아이템 고유효과 인터페이스
