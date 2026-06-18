@@ -205,7 +205,7 @@ export type TUniqueName =
  * - @required desc[string]: 고유효과 설명
  * - @required values[number[]]: 고유효과 효과 수치
  */
-interface IUnique {
+export interface IUnique {
   name: TUniqueName;
   desc: string;
   values: number[];
